@@ -1,0 +1,70 @@
+*{
+    /* styles apply to all element in the page */
+    box-sizing: border-box;  
+    font-family: monospace;
+}
+h1{
+    text-align: center;
+}
+#cont{
+    /* the container of all element */
+    width:30%;
+    margin: 0 auto;
+}
+#cont #row{
+    /* parent of all grid */
+    display: grid;
+    grid-template-columns: repeat(19,4%);
+    justify-content: center;
+}
+/* styling the grid */
+#cont #row .firstColumn{
+    grid-column:1/6;
+}
+#cont #row .secondColumn{
+    grid-column:6/12;
+}
+#cont #row .thirdColumn{
+    grid-column:12/18;
+}
+#cont #row div:nth-child(17){
+    grid-column:1/9;
+}
+#cont #row div:nth-child(18){
+    grid-column:9/18;
+}
+#cont #row div:nth-child(19){
+    grid-column:1/18;
+    padding-left: em;
+}
+
+
+/* styling all children div */
+#cont #row div{
+    border: 1px solid rgb(201, 190, 190);
+    padding:1em;
+    cursor: pointer;
+    border-radius: 0.4em;
+    font-weight: bold;
+    background-color: rgba(252, 247, 247,0.2);
+    color:black;
+    font-size: 1.5em;
+    padding-left: 1.4em;
+    text-align: center;
+}
+#cont #row div:hover{
+    /* applying hover effect on all grid  */
+    background-color: rgb(124, 115, 115);
+    transition: background-color 200ms linear;
+    color:white;
+}
+#cont div input{
+    /* styling the output */
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border-radius: 0.4em;
+   font-size: 1.3em;
+   font-weight: bold;
+   grid-column:1/18;
+   padding: 1.6em;
+   text-align: right;
+}
