@@ -3,9 +3,10 @@
     box-sizing: border-box;  
     font-family: monospace;
 }
-h1{
+.heading{
     text-align: center;
-    padding-right: 1.7em;
+    padding-right: 1.5em;
+    font-family: sans-serif
 }
 #cont{
     /* the container of all element */
