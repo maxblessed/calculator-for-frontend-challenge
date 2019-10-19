@@ -49,7 +49,7 @@ function computeInput(){
             if(displayAnswer.endsWith(item)&&displayOutput.value.length>1){
                 return
             }else if(displayAnswer.startsWith(item)){
-                displayOutput.value='';
+                displayOutput.value='0';
                 return
             }
         }
